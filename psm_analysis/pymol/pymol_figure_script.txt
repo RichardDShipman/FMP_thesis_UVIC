@@ -1,0 +1,70 @@
+# --- SCRIPT FOR MULTIPLE LABELS WITH CHAIN-COLORED BACKGROUNDS ---
+
+# Step 1: Hide any previous labels to start fresh
+unlabel
+
+# Step 2: Create selections for EACH individual residue
+# Chain A (Blue)
+select N32_A, chain A and resi 32 and name ND2
+select N97_A, chain A and resi 97 and name ND2
+select N116_A, chain A and resi 116 and name ND2
+select N132_A, chain A and resi 132 and name ND2
+select N149_A, chain A and resi 149 and name ND2
+select N198_A, chain A and resi 198 and name ND2
+# Chain B (Red)
+select N32_B, chain B and resi 32 and name ND2
+select N97_B, chain B and resi 97 and name ND2
+select N116_B, chain B and resi 116 and name ND2
+select N132_B, chain B and resi 132 and name ND2
+select N149_B, chain B and resi 149 and name ND2
+select N198_B, chain B and resi 198 and name ND2
+# Chain C (Green)
+select N32_C, chain C and resi 32 and name ND2
+select N97_C, chain C and resi 97 and name ND2
+select N116_C, chain C and resi 116 and name ND2
+select N132_C, chain C and resi 132 and name ND2
+select N149_C, chain C and resi 149 and name ND2
+select N198_C, chain C and resi 198 and name ND2
+
+# Step 3: Show sticks for all selected residues
+show sticks, (N*_*A or N*_*B or N*_*C)
+
+# Step 4: Add a label to EACH individual residue
+# To help tell them apart, we can add the chain ID to the label text.
+# Chain A Labels
+label N32_A, "A:N32"
+label N97_A, "A:N97"
+label N116_A, "A:N116"
+label N132_A, "A:N132"
+label N149_A, "A:N149"
+label N198_A, "A:N198"
+# Chain B Labels
+label N32_B, "B:N32"
+label N97_B, "B:N97"
+label N116_B, "B:N116"
+label N132_B, "B:N132"
+label N149_B, "B:N149"
+label N198_B, "B:N198"
+# Chain C Labels
+label N32_C, "C:N32"
+label N97_C, "C:N97"
+label N116_C, "C:N116"
+label N132_C, "C:N132"
+label N149_C, "C:N149"
+label N198_C, "C:N198"
+
+# Step 5: Customize the labels and add pointers (arrows)
+# Set label text color to white to stand out on the colored backgrounds
+set label_color, white
+set label_size, 16 # A smaller size works better for multiple labels
+
+# Set the background "highlight" color for each label to match its chain
+set label_bg_color, blue, (N*_*A)   # All Chain A labels have a blue background
+set label_bg_color, red, (N*_*B)    # All Chain B labels have a red background
+set label_bg_color, green, (N*_*C)  # All Chain C labels have a green background
+
+# Turn on connectors and set them to be arrows
+set label_connector, on
+set label_connector_mode, 1
+
+# --- END OF SCRIPT ---

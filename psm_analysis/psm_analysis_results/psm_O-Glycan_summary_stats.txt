@@ -1,0 +1,8 @@
+--- O-Glycopeptide Analysis Summary ---
+Total O-GlycoPSMs for Target Protein: 19
+Identified O-Glycosites: 32, 97, 132, 198
+
+--- O-Glycoform Composition Counts ---
+total_glycan_composition
+HexNAc(1)Hex(1) % 365.1322    18
+Hex(1) % 162.0528              1

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Protein Sequence Annotator</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            background-color: #fdfdff;
+        }
+        h1, h2, h3 {
+            color: #1a1a1a;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+        details {
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            margin-bottom: 2rem;
+        }
+        summary {
+            font-weight: 600;
+            padding: 1rem;
+            cursor: pointer;
+        }
+        .guide-content {
+            padding: 0 1.5rem 1rem 1.5rem;
+            border-top: 1px solid #e0e0e0;
+        }
+        .input-section {
+            margin-bottom: 1.5rem;
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        textarea, select {
+            width: 100%;
+            padding: 10px;
+            font-family: monospace;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            margin-top: 0.5rem;
+        }
+        select {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        .file-input-wrapper {
+            margin-bottom: 1rem;
+        }
+        .file-input-label {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #6c757d;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        .file-input-label:hover {
+            background-color: #5a6268;
+        }
+        input[type="file"] {
+            display: none;
+        }
+        .controls {
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border: 1px solid #e0e0e0;
+        }
+        .control-grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+        .slider-container, .style-control-group {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            transition: opacity 0.3s;
+        }
+        .style-control-group label {
+            flex-basis: 200px;
+        }
+        .disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        input[type="range"] {
+            flex-grow: 1;
+        }
+        #threshold-value {
+            font-weight: bold;
+            min-width: 30px;
+        }
+        #process-button {
+            display: inline-block;
+            background: linear-gradient(145deg, #007bff, #0056b3);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            justify-self: center;
+            margin-top: 1rem;
+        }
+        #process-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        #results-container {
+            margin-top: 2rem;
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+        pre {
+            font-family: monospace;
+            font-size: 14px;
+            white-space: pre;
+            word-wrap: normal;
+            line-height: 1.6;
+            color: #2c3e50;
+            overflow-x: auto;
+            background: #ffffff;
+            padding: 1rem;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+        }
+        .notes {
+            margin-top: 1.5rem;
+            font-size: 0.95rem;
+            color: #555;
+            border-top: 1px solid #ddd;
+            padding-top: 1rem;
+        }
+        .error {
+            color: #d9534f;
+            font-weight: bold;
+        }
+        .glycosite {
+            text-decoration: underline;
+            text-decoration-thickness: 1.5px;
+        }
+    </style>
+    <!-- This style block will be dynamically updated by JavaScript -->
+    <style id="dynamic-styles"></style>
+</head>
+<body>
+    <h1>Advanced Protein Sequence Annotator</h1>
+
+    <details>
+        <summary>User Guide & Parameter Description</summary>
+        <div class="guide-content">
+            <p>This tool annotates a protein sequence based on conservation scores and identifies potential N-glycosylation sites.</p>
+            <h3>1. Sequence Data</h3>
+            <p>Load or paste your sequence data in FASTA format. If multiple sequences are detected, a dropdown menu will appear, allowing you to select which one to analyze.</p>
+            <h3>2. Conservation Data (Optional)</h3>
+            <p>Load or paste the corresponding conservation scores for your sequence. If this field is left blank, the tool will only annotate for glycosylation sites.</p>
+            <h3>3. Annotation Controls</h3>
+            <ul>
+                <li><strong>Glycosylation Sites:</strong> These sites are always marked with an <strong>underline</strong>. Their color will be determined by their conservation status.</li>
+                <li><strong>Conservation Controls:</strong> When conservation data is provided, use the slider and style controls for "Conserved" and "Non-conserved" residues.</li>
+            </ul>
+            <h3>4. Annotate Sequence</h3>
+            <p>Click this button to generate the annotated plot for the currently selected sequence.</p>
+        </div>
+    </details>
+
+    <div class="input-section">
+        <label for="fasta-input">1. Sequence Data</label>
+        <div class="file-input-wrapper">
+            <label for="fasta-file" class="file-input-label">Load FASTA File (.fa, .fasta)</label>
+            <input type="file" id="fasta-file" accept=".fasta,.fa,.txt">
+        </div>
+        <textarea id="fasta-input" placeholder=">Example_Protein_Sequence..."></textarea>
+    </div>
+
+    <div class="input-section" id="sequence-selector-container" style="display: none;">
+        <label for="sequence-selector">Select a Sequence:</label>
+        <select id="sequence-selector"></select>
+    </div>
+
+    <div class="input-section">
+        <label for="conservation-input">2. Conservation Data (Optional)</label>
+        <div class="file-input-wrapper">
+            <label for="conservation-file" class="file-input-label">Load Conservation File (.txt, .csv)</label>
+            <input type="file" id="conservation-file" accept=".txt,.csv">
+        </div>
+        <textarea id="conservation-input" placeholder="Paste comma-separated conservation scores here..."></textarea>
+    </div>
+
+    <div class="controls">
+        <h3>3. Annotation Controls</h3>
+        <div class="control-grid">
+            <div id="conservation-controls">
+                <div class="slider-container">
+                    <label for="conservation-threshold">Conservation Threshold:</label>
+                    <input type="range" id="conservation-threshold" min="0" max="10" step="0.1" value="8">
+                    <span id="threshold-value">8.0</span>
+                </div>
+                <div class="style-control-group">
+                    <label for="conserved-color">Conserved Residues:</label>
+                    <input type="color" id="conserved-color" value="#4169E1"> <!-- RoyalBlue -->
+                    <select id="conserved-style">
+                        <option value="normal">Normal</option>
+                        <option value="bold">Bold</option>
+                        <option value="italic">Italic</option>
+                    </select>
+                </div>
+                <div class="style-control-group">
+                    <label for="non-conserved-color">Non-conserved Residues:</label>
+                    <input type="color" id="non-conserved-color" value="#DC143C"> <!-- Crimson -->
+                    <select id="non-conserved-style">
+                        <option value="normal">Normal</option>
+                        <option value="bold">Bold</option>
+                        <option value="italic" selected>Italic</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+            <div class="style-control-group">
+                 <label for="default-color">Default Text (No Conservation):</label>
+                 <input type="color" id="default-color" value="#696969"> <!-- DimGray -->
+                 <select id="default-style">
+                    <option value="normal" selected>Normal</option>
+                    <option value="bold">Bold</option>
+                    <option value="italic">Italic</option>
+                </select>
+            </div>
+            <button id="process-button">Annotate Sequence</button>
+        </div>
+    </div>
+
+    <div id="results-container">
+        <h2>Results</h2>
+        <pre id="sequence-output">Your annotated sequence will appear here.</pre>
+        <div id="notes" class="notes"></div>
+    </div>
+
+    <script>
+        // --- DOM Elements ---
+        const processButton = document.getElementById('process-button');
+        const fastaInput = document.getElementById('fasta-input');
+        const conservationInput = document.getElementById('conservation-input');
+        const fastaFile = document.getElementById('fasta-file');
+        const conservationFile = document.getElementById('conservation-file');
+        const thresholdSlider = document.getElementById('conservation-threshold');
+        const thresholdValue = document.getElementById('threshold-value');
+        const conservationControls = document.getElementById('conservation-controls');
+        const sequenceSelectorContainer = document.getElementById('sequence-selector-container');
+        const sequenceSelector = document.getElementById('sequence-selector');
+        const sequenceOutput = document.getElementById('sequence-output');
+        const notesOutput = document.getElementById('notes');
+
+        // Style Controls
+        const conservedColor = document.getElementById('conserved-color');
+        const conservedStyle = document.getElementById('conserved-style');
+        const nonConservedColor = document.getElementById('non-conserved-color');
+        const nonConservedStyle = document.getElementById('non-conserved-style');
+        const defaultColor = document.getElementById('default-color');
+        const defaultStyle = document.getElementById('default-style');
+        const dynamicStyles = document.getElementById('dynamic-styles');
+
+        // --- State ---
+        let parsedFastaData = {};
+
+        // --- Event Listeners ---
+        processButton.addEventListener('click', main);
+        fastaFile.addEventListener('change', (e) => loadFile(e.target.files[0], fastaInput).then(handleFastaInputChange));
+        fastaInput.addEventListener('input', handleFastaInputChange);
+        sequenceSelector.addEventListener('change', main);
+        
+        conservationFile.addEventListener('change', (e) => {
+            loadFile(e.target.files[0], conservationInput).then(toggleConservationControls);
+        });
+        conservationInput.addEventListener('input', toggleConservationControls);
+        
+        [thresholdSlider, conservedColor, conservedStyle, nonConservedColor, nonConservedStyle, defaultColor, defaultStyle].forEach(el => {
+            el.addEventListener('input', () => {
+                if (el.type === 'range') thresholdValue.textContent = parseFloat(thresholdSlider.value).toFixed(1);
+                updateStyles();
+                if (fastaInput.value && sequenceOutput.innerHTML.length > 0 && !sequenceOutput.querySelector('.error')) main();
+            });
+        });
+        
+        // --- Initial Call ---
+        document.addEventListener('DOMContentLoaded', () => {
+            updateStyles();
+            toggleConservationControls();
+        });
+
+
+        // --- Functions ---
+        function handleFastaInputChange() {
+            const fastaText = fastaInput.value;
+            parsedFastaData = parseMultiFasta(fastaText);
+            const headers = Object.keys(parsedFastaData);
+            
+            sequenceSelector.innerHTML = '';
+            if (headers.length > 1) {
+                headers.forEach(header => {
+                    const option = document.createElement('option');
+                    option.value = header;
+                    option.textContent = header;
+                    sequenceSelector.appendChild(option);
+                });
+                sequenceSelectorContainer.style.display = 'block';
+            } else {
+                sequenceSelectorContainer.style.display = 'none';
+            }
+        }
+
+        function toggleConservationControls() {
+            const hasConservationData = conservationInput.value.trim() !== '';
+            conservationControls.classList.toggle('disabled', !hasConservationData);
+        }
+        
+        function updateStyles() {
+            const styles = {
+                conserved: { color: conservedColor.value, style: conservedStyle.value },
+                nonConserved: { color: nonConservedColor.value, style: nonConservedStyle.value },
+                defaultText: { color: defaultColor.value, style: defaultStyle.value }
+            };
+
+            let css = '';
+            for (const key in styles) {
+                const s = styles[key];
+                const cssKey = key.replace(/([A-Z])/g, '-$1').toLowerCase();
+                css += `.${cssKey} { 
+                    color: ${s.color}; 
+                    font-style: ${s.style === 'italic' ? 'italic' : 'normal'}; 
+                    font-weight: ${s.style === 'bold' ? 'bold' : 'normal'}; 
+                }\n`;
+            }
+            dynamicStyles.innerHTML = css;
+        }
+
+        function loadFile(file, targetTextarea) {
+             return new Promise((resolve, reject) => {
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = (e) => {
+                        targetTextarea.value = e.target.result;
+                        resolve();
+                    };
+                    reader.onerror = () => {
+                         const msg = `Error reading file: ${file.name}`;
+                         displayError(msg);
+                         reject(msg);
+                    };
+                    reader.readAsText(file);
+                } else {
+                    resolve();
+                }
+            });
+        }
+
+        function main() {
+            try {
+                updateStyles();
+                const threshold = parseFloat(thresholdSlider.value);
+                const headers = Object.keys(parsedFastaData);
+                if (headers.length === 0) {
+                     handleFastaInputChange(); // try to parse just in case
+                     if(Object.keys(parsedFastaData).length === 0) throw new Error("Sequence data is missing or not in FASTA format.");
+                }
+
+                const selectedHeader = headers.length > 1 ? sequenceSelector.value : headers[0];
+                let sequence = parsedFastaData[selectedHeader];
+                if (!sequence) throw new Error("Could not find selected sequence.");
+
+                let notes = "";
+                if (isNucleotide(sequence)) {
+                    notes += "<p>Nucleotide sequence detected. Translating to protein...</p>";
+                    sequence = translate(sequence);
+                }
+
+                const rawConservation = conservationInput.value.trim();
+                let conservationScores = null;
+                if(rawConservation) {
+                    conservationScores = parseConservation(rawConservation);
+                    if (sequence.length !== conservationScores.length) {
+                        throw new Error(`Length mismatch: Selected sequence has ${sequence.length} residues, but there are ${conservationScores.length} conservation scores.`);
+                    }
+                }
+
+                const glycosylationIndices = findGlycosylationSites(sequence);
+                const formattedOutput = formatOutput(sequence, conservationScores, glycosylationIndices, threshold);
+                sequenceOutput.innerHTML = formattedOutput;
+                
+                let glycosylationNotes = "";
+                if (glycosylationIndices.length > 0) {
+                     const sitePositions = glycosylationIndices.map(i => i + 1).join(', ');
+                     glycosylationNotes = `<p>Found ${glycosylationIndices.length} potential N-glycosylation site(s) starting at position(s): ${sitePositions}.</p>`;
+                } else {
+                     glycosylationNotes = "<p>No potential N-glycosylation sites were found.</p>";
+                }
+                notesOutput.innerHTML = notes + glycosylationNotes;
+
+            } catch (error) {
+                displayError(error.message);
+            }
+        }
+
+        function displayError(message) {
+            sequenceOutput.innerHTML = `<span class="error">${message}</span>`;
+            notesOutput.innerHTML = "";
+        }
+
+        function parseMultiFasta(fastaString) {
+            const sequences = {};
+            if (!fastaString) return sequences;
+
+            const lines = fastaString.split(/\r\n|\n|\r/);
+            let currentHeader = '';
+            let currentSequence = [];
+
+            for (const line of lines) {
+                const trimmedLine = line.trim();
+                if (trimmedLine.startsWith('>')) {
+                    if (currentHeader) {
+                        sequences[currentHeader] = currentSequence.join('');
+                    }
+                    currentHeader = trimmedLine.substring(1);
+                    currentSequence = [];
+                } else if (currentHeader && trimmedLine) {
+                    currentSequence.push(trimmedLine.replace(/\s/g, ''));
+                }
+            }
+            if (currentHeader) {
+                sequences[currentHeader] = currentSequence.join('');
+            }
+            return sequences;
+        }
+
+        function parseConservation(conservationString) {
+            const lines = conservationString.split(/\r\n|\n|\r/);
+            const scoreLines = lines.filter(line => /\d/.test(line));
+            if (scoreLines.length === 0) throw new Error("Could not find any lines with numerical conservation scores.");
+            const allScoresString = scoreLines.join(',').replace(/^[a-zA-Z\s,]+/, '');
+            const scores = allScoresString.split(',')
+                .map(s => s.trim())
+                .filter(s => s !== '') 
+                .map(s => parseFloat(s))
+                .filter(n => !isNaN(n));
+            if (scores.length === 0) throw new Error("Found lines that looked like scores, but failed to parse any numerical values.");
+            return scores;
+        }
+
+        function isNucleotide(sequence) {
+             if (sequence.length === 0) return false;
+            const nucleotideChars = (sequence.match(/[ACGTU]/g) || []).length;
+            const otherChars = (sequence.match(/[BDEFHIJKLMNOPQRSVWXYZ]/g) || []).length;
+            return (nucleotideChars / sequence.length) > 0.85 && otherChars === 0;
+        }
+        
+        const codonTable = {'TTT':'F','TTC':'F','TTA':'L','TTG':'L','TCT':'S','TCC':'S','TCA':'S','TCG':'S','TAT':'Y','TAC':'Y','TAA':'*','TAG':'*','TGT':'C','TGC':'C','TGA':'*','TGG':'W','CTT':'L','CTC':'L','CTA':'L','CTG':'L','CCT':'P','CCC':'P','CCA':'P','CCG':'P','CAT':'H','CAC':'H','CAA':'Q','CAG':'Q','CGT':'R','CGC':'R','CGA':'R','CGG':'R','ATT':'I','ATC':'I','ATA':'I','ATG':'M','ACT':'T','ACC':'T','ACA':'T','ACG':'T','AAT':'N','AAC':'N','AAA':'K','AAG':'K','AGT':'S','AGC':'S','AGA':'R','AGG':'R','GTT':'V','GTC':'V','GTA':'V','GTG':'V','GCT':'A','GCC':'A','GCA':'A','GCG':'A','GAT':'D','GAC':'D','GAA':'E','GAG':'E','GGT':'G','GGC':'G','GGA':'G','GGG':'G'};
+
+        function translate(dnaSequence) {
+            let protein = '';
+            const correctedLength = Math.floor(dnaSequence.length / 3) * 3;
+            const dna = dnaSequence.substring(0, correctedLength).replace(/U/g, 'T');
+            for (let i = 0; i < dna.length; i += 3) {
+                const codon = dna.substring(i, i + 3);
+                const aminoAcid = codonTable[codon] || '?';
+                if (aminoAcid === '*') break;
+                protein += aminoAcid;
+            }
+            return protein;
+        }
+
+        function findGlycosylationSites(proteinSequence) {
+            const indices = [];
+            const regex = /N[^P][ST]/g;
+            let match;
+            while ((match = regex.exec(proteinSequence)) !== null) {
+                indices.push(match.index);
+            }
+            return indices;
+        }
+        
+        function formatOutput(sequence, scores, glycosylationIndices, threshold) {
+            let finalOutput = '';
+            const lineLength = 60;
+            const glycoStartSet = new Set(glycosylationIndices);
+
+            for (let i = 0; i < sequence.length; i += lineLength) {
+                const position = i + 1;
+                let sequenceLineHtml = '';
+                const currentSequenceSlice = sequence.substring(i, i + lineLength);
+                let markerLineArr = new Array(currentSequenceSlice.length).fill('-');
+
+                for (let j = 0; j < currentSequenceSlice.length; j++) {
+                    const absPos = i + j;
+                    const char = sequence[absPos];
+                    
+                    const isPartOfGlycoSite = glycosylationIndices.some(start => absPos >= start && absPos < start + 3);
+
+                    let classes = [];
+                    if (scores) {
+                        classes.push(scores[absPos] >= threshold ? 'conserved' : 'non-conserved');
+                    } else {
+                        classes.push('default-text');
+                    }
+                    
+                    if (isPartOfGlycoSite) {
+                        classes.push('glycosite');
+                    }
+                    
+                    sequenceLineHtml += `<span class="${classes.join(' ')}">${char}</span>`;
+
+                    if (glycoStartSet.has(absPos)) {
+                        const sitePositionStr = (absPos + 1).toString().padStart(3, '0');
+                        for (let k = 0; k < 3 && j + k < currentSequenceSlice.length; k++) {
+                            markerLineArr[j + k] = sitePositionStr[k];
+                        }
+                    }
+                }
+
+                const markerLineStr = markerLineArr.join('');
+                finalOutput += `${position.toString().padEnd(5, ' ')}${sequenceLineHtml}\n`;
+                finalOutput += `${''.padEnd(5, ' ')}${markerLineStr}\n\n`;
+            }
+            return finalOutput;
+        }
+    </script>
+</body>
+</html>

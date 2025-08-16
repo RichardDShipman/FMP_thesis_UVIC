@@ -1,0 +1,12 @@
+--- N-Glycopeptide Analysis Summary for psm_withoutEndo ---
+Total N-GlycoPSMs for Target Protein: 184
+Identified N-Glycosites: 32, 97, 116, 132, 149, 198
+
+--- N-Glycoform Category Counts ---
+glycoform_category
+High Mannose            75
+Hybrid (Fucosylated)    65
+Hybrid                  17
+Unoccupied              17
+Complex                  7
+EndoE Truncated          3

@@ -1,0 +1,319 @@
+Sample,Peptide,Glycosite,Total Glycan Composition,Glycoform Category,Glycoform Subcategory
+psm_withEndoE,TVDLSDEIQEIGSTKSQNVTINPGPF,32,HexNAc(1) % 203.0794,EndoE Truncated,E
+psm_withEndoE,TVDLSDEIQEIGSTKSQNVTINPGPFAQTGY,32,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,TVDLSDEIQEIGSTKSQNVTINPGPFAQTGY,32,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,TVDLSDEIQEIGSTKSQNVTINPGPF,32,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,TVDLSDEIQEIGSTKSQNVTINPGPF,32,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,TVDLSDEIQEIGSTKSQNVTINPGPF,32,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,TVDLSDEIQEIGSTKSQNVTINPGPF,32,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withEndoE,TVDLSDEIQEIGSTKSQNVTINPGPF,32,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withEndoE,TVDLSDEIQEIGSTKSQNVTINPGPF,32,HexNAc(2)Hex(2)Fuc(1) % 876.3223,Hybrid (Fucosylated),FH
+psm_withEndoE,TVDLSDEIQEIGSTKSQNVTINPGPFAQTGY,32,HexNAc(1)Hex(1) % 365.1322,Other,O
+psm_withEndoE,TVDLSDEIQEIGSTKSQNVTINPGPFAQTGY,32,HexNAc(1) % 203.0794,EndoE Truncated,E
+psm_withoutEndoE,TVDLSDEIQEIGSTKSQNVTINPGPF,32,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,TVDLSDEIQEIGSTKSQNVTINPGPF,32,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,TVDLSDEIQEIGSTKSQNVTINPGPF,32,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,TVDLSDEIQEIGSTKSQNVTINPGPF,32,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withEndoE,MLLAPTTPGVIVEGTNNTDRW,97,HexNAc(1)Fuc(1) % 349.1373,EndoE Truncated,E F1
+psm_withEndoE,MLLAPTTPGVIVEGTNNTDRW,97,HexNAc(1)Hex(1) % 365.1322,Other,O
+psm_withEndoE,MLLAPTTPGVIVEGTNNTDRW,97,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,MLLAPTTPGVIVEGTNNTDRW,97,HexNAc(1)Hex(1) % 365.1322,Other,O
+psm_withEndoE,MLLAPTTPGVIVEGTNNTDRW,97,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,MLLAPTTPGVIVEGTNNTDRW,97,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,MLLAPTTPGVIVEGTNNTDRW,97,Unoccupied % 0.0,Unoccupied,UO
+psm_withoutEndoE,APTTPGVIVEGTNNTDRW,97,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withEndoE,LATILIEPNVQSENRTY,116,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withEndoE,LATILIEPNVQSENRTY,116,HexNAc(1) % 203.0794,EndoE Truncated,E
+psm_withEndoE,LATILIEPNVQSENRTY,116,HexNAc(1) % 203.0794,EndoE Truncated,E
+psm_withEndoE,LATILIEPNVQSENRTY,116,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,LATILIEPNVQSENRTY,116,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,LATILIEPNVQSENRTY,116,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,LATILIEPNVQSENRTY,116,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,LATILIEPNVQSENRTY,116,Unoccupied % 0.0,Unoccupied,UO
+psm_withoutEndoE,IEPNVQSENRTY,116,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withoutEndoE,IEPNVQSENRTY,116,HexNAc(3)Hex(3)Fuc(1) % 1241.4545,Complex,NA
+psm_withoutEndoE,IEPNVQSENRTY,116,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,IEPNVQSENRTY,116,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,IEPNVQSENRTY,116,HexNAc(2)Hex(2)Fuc(1) % 876.3223,Hybrid (Fucosylated),FH
+psm_withoutEndoE,IEPNVQSENRTY,116,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,IEPNVQSENRTY,116,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,ATILIEPNVQSENRTY,116,HexNAc(2)Hex(5) % 1216.4229,High Mannose,M5
+psm_withoutEndoE,ATILIEPNVQSENRTY,116,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,IEPNVQSENRTYTIF,116,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withoutEndoE,IEPNVQSENRTYTIF,116,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withoutEndoE,IEPNVQSENRTYTIF,116,HexNAc(2)Hex(5) % 1216.4229,High Mannose,M5
+psm_withoutEndoE,IEPNVQSENRTYTIF,116,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,IEPNVQSENRTYTIF,116,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,IEPNVQSENRTYTIF,116,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,IEPNVQSENRTYTIF,116,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,LATILIEPNVQSENRTY,116,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withoutEndoE,LATILIEPNVQSENRTY,116,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withoutEndoE,LATILIEPNVQSENRTY,116,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withoutEndoE,LATILIEPNVQSENRTY,116,HexNAc(2)Hex(6) % 1378.4757,High Mannose,M6
+psm_withoutEndoE,LATILIEPNVQSENRTY,116,HexNAc(2)Hex(6) % 1378.4757,High Mannose,M6
+psm_withoutEndoE,LATILIEPNVQSENRTY,116,HexNAc(2)Hex(5) % 1216.4229,High Mannose,M5
+psm_withoutEndoE,LATILIEPNVQSENRTY,116,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,LATILIEPNVQSENRTY,116,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,LATILIEPNVQSENRTY,116,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,LATILIEPNVQSENRTY,116,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,LATILIEPNVQSENRTY,116,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,LATILIEPNVQSENRTY,116,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,LATILIEPNVQSENRTY,116,HexNAc(2)Hex(3) % 892.3172,Hybrid,H
+psm_withoutEndoE,LATILIEPNVQSENRTY,116,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withEndoE,TIFGIQEQLTVSNTSQDQW,132,HexNAc(1)Fuc(1) % 349.1373,EndoE Truncated,E F1
+psm_withEndoE,TIFGIQEQLTVSNTSQDQW,132,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,TIFGIQEQLTVSNTSQDQW,132,HexNAc(1)Hex(1) % 365.1322,Other,O
+psm_withEndoE,TIFGIQEQLTVSNTSQDQW,132,HexNAc(1) % 203.0794,EndoE Truncated,E
+psm_withEndoE,TIFGIQEQLTVSNTSQDQW,132,HexNAc(1)Hex(1) % 365.1322,Other,O
+psm_withEndoE,TIFGIQEQLTVSNTSQDQW,132,HexNAc(1) % 203.0794,EndoE Truncated,E
+psm_withEndoE,TIFGIQEQLTVSNTSQDQW,132,HexNAc(1)Hex(1) % 365.1322,Other,O
+psm_withEndoE,TIFGIQEQLTVSNTSQDQW,132,HexNAc(1) % 203.0794,EndoE Truncated,E
+psm_withEndoE,TIFGIQEQLTVSNTSQDQW,132,HexNAc(1) % 203.0794,EndoE Truncated,E
+psm_withEndoE,TIFGIQEQLTVSNTSQDQW,132,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,TIFGIQEQLTVSNTSQDQW,132,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,TVSNTSQDQW,132,HexNAc(1)Fuc(1) % 349.1373,EndoE Truncated,E F1
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,Hex(1) % 162.0528,Other,O
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(6) % 1378.4757,High Mannose,M6
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(1)Fuc(1) % 349.1373,EndoE Truncated,E F1
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(1) % 203.0794,EndoE Truncated,E
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(1)Fuc(1) % 349.1373,EndoE Truncated,E F1
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(1) % 203.0794,EndoE Truncated,E
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(1)Fuc(1) % 349.1373,EndoE Truncated,E F1
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(1)Fuc(1) % 349.1373,EndoE Truncated,E F1
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(1)Fuc(1) % 349.1373,EndoE Truncated,E F1
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(1)Fuc(1) % 349.1373,EndoE Truncated,E F1
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(1)Fuc(1) % 349.1373,EndoE Truncated,E F1
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,GIQEQLTVSNTSQDQW,132,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,TIFGIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withEndoE,TIFGIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withoutEndoE,TVSNTSQDQW,132,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(4) % 1054.3701,Hybrid,H
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(4) % 1054.3701,Hybrid,H
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(4) % 1054.3701,Hybrid,H
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(9) % 1864.6342,High Mannose,M9
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(6) % 1378.4757,High Mannose,M6
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(6) % 1378.4757,High Mannose,M6
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(6) % 1378.4757,High Mannose,M6
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(6) % 1378.4757,High Mannose,M6
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(6) % 1378.4757,High Mannose,M6
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(6) % 1378.4757,High Mannose,M6
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(5) % 1216.4229,High Mannose,M5
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(5) % 1216.4229,High Mannose,M5
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(5) % 1216.4229,High Mannose,M5
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(3)Hex(3)Fuc(1) % 1241.4545,Complex,NA
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(3)Hex(3)Fuc(1) % 1241.4545,Complex,NA
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(3)Hex(3)Fuc(1) % 1241.4545,Complex,NA
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(3)Hex(3)Fuc(1) % 1241.4545,Complex,NA
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(3)Hex(3)Fuc(1) % 1241.4545,Complex,NA
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(3)Hex(3)Fuc(1) % 1241.4545,Complex,NA
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(1)Fuc(1) % 349.1373,EndoE Truncated,E F1
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(4) % 1054.3701,Hybrid,H
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(2)Fuc(1) % 876.3223,Hybrid (Fucosylated),FH
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(3) % 892.3172,Hybrid,H
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(2)Fuc(1) % 876.3223,Hybrid (Fucosylated),FH
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(2)Fuc(1) % 876.3223,Hybrid (Fucosylated),FH
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(4) % 1054.3701,Hybrid,H
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(3) % 892.3172,Hybrid,H
+psm_withoutEndoE,GIQEQLTVSNTSQDQW,132,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withEndoE,KFIDVVKTTANGSIGQY,149,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withEndoE,KFIDVVKTTANGSIGQY,149,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,KFIDVVKTTANGSIGQY,149,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,KFIDVVKTTANGSIGQY,149,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,KFIDVVKTTANGSIGQY,149,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,KFIDVVKTTANGSIGQY,149,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,KFIDVVKTTANGSIGQY,149,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,KFIDVVKTTANGSIGQY,149,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,KFIDVVKTTANGSIGQY,149,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,KFIDVVKTTANGSIGQY,149,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,KFIDVVKTTANGSIGQY,149,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,KFIDVVKTTANGSIGQY,149,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,KFIDVVKTTANGSIGQY,149,Unoccupied % 0.0,Unoccupied,UO
+psm_withoutEndoE,IDVVKTTANGSIGQY,149,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,IDVVKTTANGSIGQY,149,HexNAc(1) % 203.0794,EndoE Truncated,E
+psm_withoutEndoE,IDVVKTTANGSIGQY,149,Unoccupied % 0.0,Unoccupied,UO
+psm_withoutEndoE,IDVVKTTANGSIGQY,149,Unoccupied % 0.0,Unoccupied,UO
+psm_withoutEndoE,IDVVKTTANGSIGQY,149,Unoccupied % 0.0,Unoccupied,UO
+psm_withoutEndoE,KFIDVVKTTANGSIGQY,149,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withoutEndoE,KFIDVVKTTANGSIGQY,149,HexNAc(2)Hex(6) % 1378.4757,High Mannose,M6
+psm_withoutEndoE,KFIDVVKTTANGSIGQY,149,HexNAc(2)Hex(5) % 1216.4229,High Mannose,M5
+psm_withoutEndoE,KFIDVVKTTANGSIGQY,149,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,KFIDVVKTTANGSIGQY,149,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,KFIDVVKTTANGSIGQY,149,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,KFIDVVKTTANGSIGQY,149,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,KFIDVVKTTANGSIGQY,149,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,KFIDVVKTTANGSIGQY,149,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,KFIDVVKTTANGSIGQY,149,HexNAc(1) % 203.0794,EndoE Truncated,E
+psm_withoutEndoE,KFIDVVKTTANGSIGQY,149,Unoccupied % 0.0,Unoccupied,UO
+psm_withoutEndoE,KFIDVVKTTANGSIGQYGPL,149,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,KFIDVVKTTANGSIGQYGPL,149,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,KFIDVVKTTANGSIGQYGPL,149,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withEndoE,DSVNMTAFCDFY,198,HexNAc(1)Hex(1) % 365.1322,Other,O
+psm_withEndoE,STTNYDSVNMTAFCDF,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,STTNYDSVNMTAFCDF,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(1)Hex(1) % 365.1322,Other,O
+psm_withEndoE,DSVNMTAFCDFY,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,DSVNMTAFCDFY,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,STTNYDSVNMTAF,198,HexNAc(1)Fuc(1) % 349.1373,EndoE Truncated,E F1
+psm_withEndoE,STTNYDSVNMTAF,198,HexNAc(1) % 203.0794,EndoE Truncated,E
+psm_withEndoE,STTNYDSVNMTAF,198,HexNAc(1) % 203.0794,EndoE Truncated,E
+psm_withEndoE,STTNYDSVNMTAF,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,STTNYDSVNMTAF,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withEndoE,STTNYDSVNMTAF,198,HexNAc(1) % 203.0794,EndoE Truncated,E
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(1) % 203.0794,EndoE Truncated,E
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(6) % 1378.4757,High Mannose,M6
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(6) % 1378.4757,High Mannose,M6
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(1)Hex(1) % 365.1322,Other,O
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(5) % 1216.4229,High Mannose,M5
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(9) % 1864.6342,High Mannose,M9
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(3) % 892.3172,Hybrid,H
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(1)Hex(1) % 365.1322,Other,O
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(1) % 203.0794,EndoE Truncated,E
+psm_withEndoE,STTNYDSVNMTAF,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(1)Hex(1) % 365.1322,Other,O
+psm_withEndoE,STTNYDSVNMTAFCDF,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,STTNYDSVNMTAFCDF,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(1)Hex(1) % 365.1322,Other,O
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(1)Hex(1) % 365.1322,Other,O
+psm_withEndoE,DSVNMTAFCDFY,198,HexNAc(1)Fuc(1) % 349.1373,EndoE Truncated,E F1
+psm_withEndoE,DSVNMTAFCDFY,198,HexNAc(1) % 203.0794,EndoE Truncated,E
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(1)Fuc(1) % 349.1373,EndoE Truncated,E F1
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(1)Hex(1) % 365.1322,Other,O
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(1)Hex(1) % 365.1322,Other,O
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(1)Hex(1) % 365.1322,Other,O
+psm_withEndoE,DSVNMTAFCDFY,198,HexNAc(1) % 203.0794,EndoE Truncated,E
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(1)Hex(1) % 365.1322,Other,O
+psm_withEndoE,DSVNMTAFCDFY,198,HexNAc(1) % 203.0794,EndoE Truncated,E
+psm_withEndoE,DSVNMTAFCDFY,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,DSVNMTAFCDFY,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(1)Fuc(1) % 349.1373,EndoE Truncated,E F1
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(1) % 203.0794,EndoE Truncated,E
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(10) % 2026.6870,High Mannose,M10
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(9) % 1864.6342,High Mannose,M9
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(9) % 1864.6342,High Mannose,M9
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(9) % 1864.6342,High Mannose,M9
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(9) % 1864.6342,High Mannose,M9
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(1) % 203.0794,EndoE Truncated,E
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(1) % 203.0794,EndoE Truncated,E
+psm_withEndoE,DSVNMTAFCDFY,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withEndoE,STTNYDSVNMTAFCDF,198,HexNAc(1)Hex(1) % 365.1322,Other,O
+psm_withoutEndoE,DSVNMTAF,198,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(9) % 1864.6342,High Mannose,M9
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(9) % 1864.6342,High Mannose,M9
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(6) % 1378.4757,High Mannose,M6
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(5) % 1216.4229,High Mannose,M5
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(3) % 892.3172,Hybrid,H
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(3) % 892.3172,Hybrid,H
+psm_withoutEndoE,STTNYDSVNMTAF,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withoutEndoE,STTNYDSVNMTAF,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withoutEndoE,STTNYDSVNMTAF,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(9) % 1864.6342,High Mannose,M9
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(5) % 1216.4229,High Mannose,M5
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,STTNYDSVNMTAF,198,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(9) % 1864.6342,High Mannose,M9
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(6) % 1378.4757,High Mannose,M6
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(5) % 1216.4229,High Mannose,M5
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(4) % 1054.3701,Hybrid,H
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(3) % 892.3172,Hybrid,H
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(3) % 892.3172,Hybrid,H
+psm_withoutEndoE,STTNYDSVNMTAF,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withoutEndoE,STTNYDSVNMTAF,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withoutEndoE,DSVNMTAFCDFY,198,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withoutEndoE,DSVNMTAFCDFY,198,HexNAc(2)Hex(6) % 1378.4757,High Mannose,M6
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withoutEndoE,DSVNMTAFCDFY,198,HexNAc(2)Hex(3)Fuc(1) % 1038.3751,Hybrid (Fucosylated),FH
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(10) % 2026.6870,High Mannose,M10
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(10) % 2026.6870,High Mannose,M10
+psm_withoutEndoE,DSVNMTAFCDFY,198,HexNAc(2)Hex(3) % 892.3172,Hybrid,H
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(6) % 1378.4757,High Mannose,M6
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(6) % 1378.4757,High Mannose,M6
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(5) % 1216.4229,High Mannose,M5
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(4) % 1054.3701,Hybrid,H
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(3) % 892.3172,Hybrid,H
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(4) % 1054.3701,Hybrid,H
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(5) % 1216.4229,High Mannose,M5
+psm_withoutEndoE,DSVNMTAFCDFY,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withoutEndoE,DSVNMTAFCDFY,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withoutEndoE,DSVNMTAFCDFY,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withoutEndoE,DSVNMTAFCDFY,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withoutEndoE,DSVNMTAFCDFY,198,Unoccupied % 0.0,Unoccupied,UO
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(9) % 1864.6342,High Mannose,M9
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(8) % 1702.5814,High Mannose,M8
+psm_withoutEndoE,STTNYDSVNMTAFCDF,198,HexNAc(2)Hex(7) % 1540.5285,High Mannose,M7

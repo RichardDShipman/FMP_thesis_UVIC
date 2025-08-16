@@ -1,0 +1,11 @@
+--- N-Glycopeptide Analysis Summary ---
+Total N-GlycoPSMs for Target Protein: 115
+Identified N-Glycosites: 32, 97, 116, 132, 149, 198
+
+--- N-Glycoform Category Counts ---
+glycoform_category
+Unoccupied              46
+EndoE                   35
+Oligomannose            32
+Hybrid                   1
+Hybrid (Fucosylated)     1
