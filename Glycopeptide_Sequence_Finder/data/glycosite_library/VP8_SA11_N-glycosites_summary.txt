@@ -1,0 +1,7 @@
+Glycosite Summary for VP8_SA11
+Glycosylation Type: N
+Total Glycosites Found: 7
+Total Proteins with Glycosites: 1
+
+Glycosites per Protein:
+VP8_SA11: 7 glycosites
