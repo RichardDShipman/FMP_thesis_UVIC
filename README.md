@@ -1,9 +1,18 @@
 # FMP Thesis UVIC
 
-**Author:** Richard Shipman
+**Author:** Richard D. Shipman - 2025
+
 **University:** El Campus Vic de la Universitat de Vic - Universitat Central de Catalunya (UVic-UCC)
 
-This repository contains the code and data for my Final Masters Project (FMP). The project focuses on the analysis of glycopeptides and includes three main tools:
+**Degree:** Master of Science in Omics Data Analysis
+
+**Master Thesis:** Rotavirus A VP8* Domain of VP4 Glycopeptide Analysis by Tandem Mass Spectrometry
+
+**Lab Supervisor:** Jesús Rodríguez Díaz, PhD, Microbiología y Ecología, Universidad de Valencia
+
+**Academic tutor:** Mireia Olivella, PhD, Departament de Biociències Facultat de Ciències, Tecnologia i Enginyeries, University of Vic – Central University of Catalonia
+
+This repository contains the code and data for my Final Masters Project (FMP). The project focuses on the analysis of viral glycopeptides and includes three main tools:
 
 1.  **Glycopeptide Sequence Finder**: A Python tool for identifying theoretical glycopeptide sequences from protein FASTA files.
 2.  **MSA Plotter with Sequon Markers**: An R script for analyzing and visualizing multiple sequence alignments with highlighted N-sequons.
